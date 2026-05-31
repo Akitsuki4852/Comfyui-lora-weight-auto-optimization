@@ -1,0 +1,222 @@
+{
+  "@p1ct01-000030": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\@p1ct01-000030.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "[NoobAI XL]onineko-v2 EP15[LoKr][V-Pred]": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\[NoobAI XL]onineko-v2 EP15[LoKr][V-Pred].safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "aLittleSick": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\aLittleSick.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "baE28094E28094E380.88RR": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\baE28094E28094E380.88RR.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "betterHands": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\betterHands.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "BetterLine-Style": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\BetterLine-Style.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Bright_style": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Bright_style.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "caoXL_NBVP1_lokr_V6311PZ": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\caoXL_NBVP1_lokr_V6311PZ.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "chenbin": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\chenbin.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Chinese style_SBT_V4_ILL1.0": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Chinese style_SBT_V4_ILL1.0.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "ckn0.5-chenbin-000022": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\ckn0.5-chenbin-000022.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Comic_Kawaii2_8_IL": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Comic_Kawaii2_8_IL.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "dopamineXL_NBVP1_lokr_V6311PZ": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\dopamineXL_NBVP1_lokr_V6311PZ.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "hoshi_(snacherubi)": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\hoshi_(snacherubi).safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "il_contrast_slider_d1": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\il_contrast_slider_d1.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "IL_jasonbrod3 flat_color_with_line style": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\IL_jasonbrod3 flat_color_with_line style.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "il_saturation_slider_d1": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\il_saturation_slider_d1.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "jima_style": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\jima_style.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "JinZe": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\JinZe.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "kanzarin": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\kanzarin.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "kieed2-000102": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\kieed2-000102.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "konpe_itou_style-v1_epoch_23": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\konpe_itou_style-v1_epoch_23.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "konya karasue": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\konya karasue.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "KonyaKarasue-000008": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\KonyaKarasue-000008.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "KonyaKarasue_EPS05-000008": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\KonyaKarasue_EPS05-000008.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "LCMTurboMix_Euler_A_fix": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\LCMTurboMix_Euler_A_fix.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Loraeyes_V1": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Loraeyes_V1.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Matchach_ArtStyle": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Matchach_ArtStyle.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Mdf_anStyle-20": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Mdf_anStyle-20.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "met4b3ku-000002": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\met4b3ku-000002.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "mignon10": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\mignon10.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "MomoSweetSpaceILL": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\MomoSweetSpaceILL.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "morialuluka_v1.1_IL": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\morialuluka_v1.1_IL.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "nffa-000024": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\nffa-000024.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "pixAI-'style'": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\pixAI-'style'.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "pixAIjp+": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\pixAIjp+.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "reduce_wrinkles_illstriouosv0.1_ADDifT_2_in_1_v1.2": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\reduce_wrinkles_illstriouosv0.1_ADDifT_2_in_1_v1.2.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Rurudo_Style__Illustrious-000009": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Rurudo_Style__Illustrious-000009.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "SmoothNoob_Quality": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\SmoothNoob_Quality.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "ta9": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\ta9.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Uekura Eku_illustriousXL": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Uekura Eku_illustriousXL.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "xuegao-000007": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\xuegao-000007.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "YunaiAes": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\YunaiAes.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "Zenilstyle-000014": {
+    "path": "C:\\Users\\akits\\Documents\\ComfyUI\\models\\loras\\Zenilstyle-000014.safetensors",
+    "min": 0.0,
+    "max": 1.0
+  }
+}

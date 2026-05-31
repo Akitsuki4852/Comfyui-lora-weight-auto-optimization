@@ -1,0 +1,1079 @@
+{
+  "id": "4e64a637-e129-4a3d-a790-b8e739d1f244",
+  "revision": 0,
+  "last_node_id": 37,
+  "last_link_id": 54,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "Efficient Loader",
+      "pos": [
+        -2854.753232835508,
+        -1167.855105216756
+      ],
+      "size": [
+        400,
+        716.875
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": 51
+        },
+        {
+          "name": "cnet_stack",
+          "shape": 7,
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": null
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "shiitakeMix_v20.safetensors",
+        "Baked VAE",
+        -2,
+        "None",
+        1,
+        1,
+        "masterpiece, best quality, very aesthetic, absurdres, high quality, year 2025, HDR, score_9, dynamic angle, looking at viewer, full body, asymmetrical, soft lighting, sunlight, konyakarasuehuafeng, Yecangshu, clear regulus, xiaomao, homura2414, blinklikeer, sudong Tangyuan, shuangbatian, blackwiwi, 寻然, lin_qing(phosphorus_1104), yeej Chan, tandouji (machine), GLUTTON, linghuizi, niukoukouzi, nineV, juri (tansan80mb), rella, qingming tiaohetu, mento, photobashing, konpeitou, @nffa, 1girl, solo, black_hair, red_eyes, black_dress, standing, indoors, bedroom, window, looking_at_viewer, parted_lips, large_breasts, arms_behind_back, frills, dressing table, bed, sunlight, detached_sleeves, detached_collar, frilled wrist_cuffs, thighhighs, head_tilt, two_side_up, hair_ribbon, red_ribbon, black cat_ears, black cat_tail, looking at viewer, relaxed posture, very cute, standing, lens flare, dappled sunlight, serene ethereal atmosphere, depth of field",
+        "lowres, 2girls,low resolution, old, furry, signature, username, logo, bad hands, mutated hands, worst quality, low quality, bad quality, worst detail, censor, extra fingers, six fingers, deformed hands, patreon, twitter username, furry, machine",
+        "none",
+        "comfy",
+        1024,
+        1536,
+        1
+      ],
+      "color": "#443322",
+      "bgcolor": "#665533",
+      "shape": "box"
+    },
+    {
+      "id": 3,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        -2429.7995009684537,
+        -1163.3734010213914
+      ],
+      "size": [
+        543.5,
+        966.1875
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 2
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 3
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 4
+        },
+        {
+          "name": "optional_vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 5
+        },
+        {
+          "name": "script",
+          "shape": 7,
+          "type": "SCRIPT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            31,
+            39
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        1095484236049546,
+        "randomize",
+        15,
+        3.5,
+        "euler_ancestral",
+        "sgm_uniform",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#332233",
+      "bgcolor": "#553355",
+      "shape": "box"
+    },
+    {
+      "id": 7,
+      "type": "Lora Stacker (LoraManager)",
+      "pos": [
+        -4181.111278435306,
+        -924.5273579624097
+      ],
+      "size": [
+        285.8125,
+        658.9375
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LORA_STACK",
+          "type": "LORA_STACK",
+          "links": [
+            50
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            24
+          ]
+        },
+        {
+          "name": "active_loras",
+          "type": "STRING",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Lora Stacker (LoraManager)",
+        "__lm_widget_ids": [
+          "__lm_autocomplete_meta_text",
+          "text",
+          "loras"
+        ]
+      },
+      "widgets_values": [
+        {
+          "version": 1,
+          "textWidgetName": "text",
+          "lastAccepted": {
+            "start": 249,
+            "end": 276,
+            "insertedText": "<lora:Matchach_ArtStyle:1>,",
+            "textSnapshot": "<lora:konya karasue:0.50>, <lora:ta9:0.80>, <lora:@p1ct01-000030:1.00>, <lora:nffa-000024:0.40>, <lora:pixAI-'style':0.50>, <lora:LCMTurboMix_Euler_A_fix:1.00>, <lora:konpe_itou_style-v1_epoch_23:0.40>, <lora:nffa-000024:0.40>, <lora:chenbin:1.00>, <lora:Matchach_ArtStyle:1>,"
+          }
+        },
+        "",
+        []
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewAny",
+      "pos": [
+        -3745.817156550172,
+        -294.3581660674582
+      ],
+      "size": [
+        428,
+        223.625
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 12,
+      "type": "easy forLoopEnd",
+      "pos": [
+        -1356.6212892049302,
+        -1275.2391580212388
+      ],
+      "size": [
+        309.375,
+        203.1875
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "link": 28
+        },
+        {
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": 30
+        },
+        {
+          "name": "initial_value2",
+          "type": "*",
+          "link": 31
+        },
+        {
+          "name": "initial_value3",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "value1",
+          "type": "*",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "value2",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "value3",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopEnd"
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 13,
+      "type": "easy forLoopStart",
+      "pos": [
+        -4169.3552613261445,
+        -1280.5742437806562
+      ],
+      "size": [
+        270,
+        175.59375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "total",
+          "type": "INT",
+          "widget": {
+            "name": "total"
+          },
+          "link": 20
+        },
+        {
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "links": [
+            28
+          ]
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "links": [
+            29,
+            48
+          ]
+        },
+        {
+          "name": "value1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "value2",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopStart"
+      },
+      "widgets_values": [
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 14,
+      "type": "PreviewAny",
+      "pos": [
+        -3327.992748585812,
+        -1069.4401254018685
+      ],
+      "size": [
+        452.1875,
+        298.625
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 15,
+      "type": "PreviewAny",
+      "pos": [
+        -3330.2742458252496,
+        -702.8059543479059
+      ],
+      "size": [
+        455.4375,
+        217.125
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 16,
+      "type": "INTConstant",
+      "pos": [
+        -4484.299886745856,
+        -1243.5166367243908
+      ],
+      "size": [
+        225,
+        103.59375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            20,
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "INTConstant"
+      },
+      "widgets_values": [
+        5
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 17,
+      "type": "Text Concatenate",
+      "pos": [
+        -3671.03440691441,
+        -791.6179220654851
+      ],
+      "size": [
+        270,
+        214.25
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 34
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 24
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "ComfyMathExpression",
+      "pos": [
+        -3218.018709627586,
+        -1268.4954205370932
+      ],
+      "size": [
+        237.75,
+        163.59375
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "a",
+          "name": "values.a",
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": 29
+        },
+        {
+          "label": "b",
+          "name": "values.b",
+          "shape": 7,
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            30
+          ]
+        },
+        {
+          "name": "BOOL",
+          "type": "BOOLEAN",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfyMathExpression"
+      },
+      "widgets_values": [
+        "a + 1"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "PreviewAny",
+      "pos": [
+        -887.9756068607758,
+        -1286.470308742922
+      ],
+      "size": [
+        225,
+        166
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 27,
+      "type": "PrimitiveString",
+      "pos": [
+        -3710.3217970480027,
+        -526.1475080487767
+      ],
+      "size": [
+        333.375,
+        187.5
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, very aesthetic, absurdres, high quality, year 2025, HDR, score_9, dynamic angle, looking at viewer, full body, asymmetrical, soft lighting, sunlight, konyakarasuehuafeng, Yecangshu, clear regulus, xiaomao, homura2414, blinklikeer, sudong Tangyuan, shuangbatian, blackwiwi, 寻然, lin_qing(phosphorus_1104), yeej Chan, tandouji (machine), GLUTTON, linghuizi, niukoukouzi, nineV, juri (tansan80mb), rella, qingming tiaohetu, mento, photobashing, konpeitou, @nffa, 1girl, solo, black_hair, red_eyes, black_dress, standing, indoors, bedroom, window, looking_at_viewer, parted_lips, large_breasts, arms_behind_back, frills, dressing table, bed, sunlight, detached_sleeves, detached_collar, frilled wrist_cuffs, thighhighs, head_tilt, two_side_up, hair_ribbon, red_ribbon, black cat_ears, black cat_tail, looking at viewer, relaxed posture, very cute, standing, lens flare, dappled sunlight, serene ethereal atmosphere, depth of field"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Save Image (LoraManager)",
+      "pos": [
+        -1753.3556664763178,
+        -927.9832273119131
+      ],
+      "size": [
+        451.1875,
+        546.25
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 39
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Image (LoraManager)"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        "png",
+        false,
+        100,
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 37,
+      "type": "LoraOptimizer",
+      "pos": [
+        -3721.2603759370218,
+        -1146.4567145717733
+      ],
+      "size": [
+        290.609375,
+        274.234375
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 48
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 49
+        },
+        {
+          "name": "lora_stack_0_1",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": 50
+        },
+        {
+          "name": "lora_stack_neg1_1",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        },
+        {
+          "name": "lora_stack_0_2",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "links": [
+            51
+          ]
+        },
+        {
+          "name": "lora_stack_text",
+          "type": "STRING",
+          "links": [
+            52
+          ]
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "links": [
+            53
+          ]
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "links": [
+            54
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraOptimizer"
+      },
+      "widgets_values": [
+        "CMA-ES",
+        "CMAES20260601",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      2,
+      1,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      3,
+      2,
+      2,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      4,
+      2,
+      3,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      5,
+      2,
+      4,
+      3,
+      4,
+      "VAE"
+    ],
+    [
+      15,
+      7,
+      2,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      16,
+      0,
+      13,
+      1,
+      "INT"
+    ],
+    [
+      23,
+      17,
+      0,
+      2,
+      2,
+      "STRING"
+    ],
+    [
+      24,
+      7,
+      1,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      28,
+      13,
+      0,
+      12,
+      0,
+      "FLOW_CONTROL"
+    ],
+    [
+      29,
+      13,
+      1,
+      19,
+      0,
+      "INT"
+    ],
+    [
+      30,
+      19,
+      1,
+      12,
+      1,
+      "INT"
+    ],
+    [
+      31,
+      3,
+      5,
+      12,
+      2,
+      "IMAGE"
+    ],
+    [
+      33,
+      12,
+      0,
+      21,
+      0,
+      "*"
+    ],
+    [
+      34,
+      27,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      39,
+      3,
+      5,
+      36,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      13,
+      1,
+      37,
+      0,
+      "INT"
+    ],
+    [
+      49,
+      16,
+      0,
+      37,
+      1,
+      "INT"
+    ],
+    [
+      50,
+      7,
+      0,
+      37,
+      2,
+      "LORA_STACK"
+    ],
+    [
+      51,
+      37,
+      0,
+      2,
+      0,
+      "LORA_STACK"
+    ],
+    [
+      52,
+      37,
+      1,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      53,
+      37,
+      2,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      54,
+      37,
+      3,
+      36,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8939182057667044,
+      "offset": [
+        3893.6440704639676,
+        1554.2338165429246
+      ]
+    },
+    "frontendVersion": "1.43.18"
+  },
+  "version": 0.4
+}
